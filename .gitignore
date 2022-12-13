@@ -6,3 +6,4 @@ cmake-build-debug-mingw/
 *.txt
 *.md
 *.exe
+*.json

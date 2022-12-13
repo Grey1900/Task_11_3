@@ -19,7 +19,7 @@ int main()
 
     for(int i = 0; i < 3; i++){
         int octet = i;
-        if (octetCheck(std::string ipAdress, int octet) != 0) {
+        if (octetCheck(ipAdress, octet) != 0) {
             std::cout << "Invalid";
             break;
         } else {
@@ -40,5 +40,5 @@ int octetCheck(std::string ipAdress, int octet){
 
 std::string selectOctet(std::string ipAdress, int octet){
     char const sep = '.';
-    std::string partIp = ipAdress.substr(octet, email.find(sep))
-}
+    std::string partIp = ipAdress.substr(octet, ipAdress.find(sep))
+};
