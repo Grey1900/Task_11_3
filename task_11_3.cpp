@@ -22,7 +22,7 @@ int main()
         if (octetCheck(ipAdress, octet) != 0) {
             std::cout << "Invalid";
             break;
-        } else {
+        } else if (int octet = 3) {
             std::cout << "Valid";
         }
     }
@@ -40,5 +40,7 @@ int octetCheck(std::string ipAdress, int octet){
 
 std::string selectOctet(std::string ipAdress, int octet){
     char const sep = '.';
-    std::string partIp = ipAdress.substr(octet, ipAdress.find(sep))
-};
+    std::string partIp = ipAdress.substr(octet, ipAdress.find(sep));
+
+    return partIp;
+}
