@@ -1,6 +1,6 @@
 /******************************************************************************/
 /* File Name: Task_11_3                                                       */
-/* Data: 10.11.2022                                                           */
+/* Data: 22.11.2022                                                           */
 /* Developer: Sergey Plotnikov                                                */
 /* Description: Solution for task 3 of Block 11 of the C++ study course       */
 /******************************************************************************/
@@ -39,9 +39,9 @@ int octetCheck(std::string ipAdress, int octet) {
     return error;
 }
 
-std::string selectOctet(std::string ipAdress, int octet) {
-    std::string partIp;
-    
-    
+std::string selectOctet(std::string ipAdress, int octet){
+    char const sep = '.';
+    std::string partIp = ipAdress.substr(octet, ipAdress.find(sep));
+
     return partIp;
 }
