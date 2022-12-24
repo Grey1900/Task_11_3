@@ -1,12 +1,13 @@
 /******************************************************************************/
 /* File Name: Task_11_3                                                       */
-/* Data: 10.12.2022                                                           */
+/* Data: 22.11.2022                                                           */
 /* Developer: Sergey Plotnikov                                                */
 /* Description: Solution for task 3 of Block 11 of the C++ study course       */
 /******************************************************************************/
 
 #include <iostream>
 #include <string>
+#include <cstring>
 
 int octetCheck(std::string, int);
 
@@ -30,7 +31,7 @@ int main()
     return 0;
 }
 
-int octetCheck(std::string ipAdress, int octet){
+int octetCheck(std::string ipAdress, int octet) {
     int error = 0;
 
 
@@ -39,7 +40,6 @@ int octetCheck(std::string ipAdress, int octet){
 }
 
 std::string selectOctet(std::string ipAdress, int octet){
-
     std::string partIp[4];
 
     for (int i = 0; i < 4; i++){
