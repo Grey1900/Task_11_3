@@ -39,8 +39,12 @@ int octetCheck(std::string ipAdress, int octet){
 }
 
 std::string selectOctet(std::string ipAdress, int octet){
-    char const sep = '.';
-    std::string partIp = ipAdress.substr(octet, ipAdress.find(sep));
-    
+
+    std::string partIp[4];
+
+    for (int i = 0; i < 4; i++){
+
+    }
+
     return partIp;
 }
